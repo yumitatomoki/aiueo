@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/** ----------------------------------------------
+ *
+ * contact base
+ *
+ * -------------------------------------------- */
+::placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+
+input:not(input[type=checkbox]), textarea {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3vw;
+  border: 0.3vw solid #bfbfbf;
+  border-radius: 1vw;
+  font-size: 3.733vw;
+  -khtml-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+input:not(input[type=checkbox]) {
+  height: 12vw;
+}
+
+textarea {
+  line-height: 1.8;
+}
+
+.ui-datepicker .ui-datepicker-buttonpane button {
+  padding: 0;
+  width: 15vw;
+  height: 8vw;
+  opacity: 1;
+}
+
+.def_btn.inactive {
+  background-color: #ccc;
+}
+
+.require_label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10vw;
+  height: 5vw;
+  margin-left: 2vw;
+  color: #fff;
+  border-radius: 0.8vw;
+  background-color: #d82616;
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+/* return_btn */
+.return_btn, .return_btn.page_back {
+  position: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72vw;
+  height: 12vw;
+  margin: 0 auto;
+  margin-top: 6.667vw;
+  padding-left: 2.667vw;
+  text-align: center;
+  color: #fa4e3e;
+  border: 0.133vw solid #fa4e3e;
+  border-radius: 0.4vw;
+  background-color: #fff;
+  font-size: 3.733vw;
+  font-weight: 500;
+}
+
+.return_btn.modaal-close {
+  margin-top: 5vw;
+}
+
+.return_btn.modaal-close::before {
+  display: none;
+}
+
+.return_btn.modaal-close::after {
+  display: none;
+}
+
+.return_arrow {
+  position: relative;
+}
+
+.return_arrow::before {
+  position: absolute;
+  top: 0;
+  left: -5vw;
+  bottom: 0;
+  width: 2vw;
+  height: 2vw;
+  margin: auto;
+  content: "";
+  transform: rotate(-135deg);
+  vertical-align: middle;
+  border-top: 0.4vw solid #fa4e3e;
+  border-right: 0.4vw solid #fa4e3e;
+}
+
+/** ----------------------------------------------
+ *
+ * contact_list
+ *
+ * -------------------------------------------- */
+.contact_list {
+  margin-top: 10vw;
+}
+
+.contact_list_item .error {
+  margin-top: 2vw;
+}
+
+.contact_list_item.privacy_list_item .error {
+  text-align: center;
+}
+
+.error {
+  width : 100%;
+  padding: 0;
+  display: inline-block;
+  font-size: 90%;
+  color: red;
+  box-sizing: border-box;
+}
+
+.contact_list_item.privacy_list_item {
+  margin-bottom: 17vw;
+}
+
+.contact_list_item {
+  display: block;
+  margin-bottom: 10vw;
+}
+
+.contact_list_ttl {
+  display: flex;
+  align-items: center;
+  margin-top: 3vw;
+  margin-bottom: 1.333vw;
+  font-weight: 500;
+}
+
+.contact_list_item_date li {
+  margin-top: 1.333vw;
+  margin-bottom: 1.333vw;
+}
+
+/* privacypolicy */
+
+.privacypolicy_text_link {
+  display: inline;
+}
+
+.privacypolicy_check_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.privacypolicy_check {
+  display: inline-flex;
+  align-items: center;
+  height: 12vw;
+  margin-top: 2vw;
+  cursor: pointer;
+  text-align: center;
+  font-size: 4vw;
+}
+
+.privacypolicy_check span {
+  display: block;
+  padding-left: 2.667vw;
+}
+
+.privacypolicy_check input[type=checkbox] {
+  width: 5.5vw;
+  height: 5.5vw;
+}
+
+/** ----------------------------------------------
+ *
+ * modal
+ *
+ * -------------------------------------------- */
+/*inputconfirmエリアをはじめは非表示*/
+#inputconfirm {
+  display: none;
+}
+
+/*モーダルの横幅を変更したい場合*/
+.modaal-container {
+  max-width: 90vw;
+}
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after,
+.modaal-close:before {
+  background: #ccc;
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before {
+  background: #666;
+}
+
+.modaal-content-container {
+  box-sizing: border-box;
+  padding: 3vw 5vw;
+}
+
+.modaal-wrapper {
+  overflow-x: hidden;
+}
+
+.modaal-inner-wrapper {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.modaal-close {
+  top: 1.333vw;
+  right: 1.333vw;
+}
+
+.confirm_btnarea {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.modal_cancel_btn.modaal-close {
+  position: initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72vw;
+  height: 12vw;
+  margin: 0 auto;
+  margin-top: 6.667vw;
+  margin-bottom: 5vw;
+  text-align: center;
+  color: #fa4e3e;
+  border: 0.133vw solid #fa4e3e;
+  border-radius: 1vw;
+  background-color: #fff;
+  font-size: 3.733vw;
+  font-weight: 500;
+}
+
+.modal_cancel_btn.modaal-close::before {
+  display: none;
+}
+
+.modal_cancel_btn.modaal-close::after {
+  display: none;
+}
+
+.inputconfirm_list>dt {
+  margin-top: 5vw;
+  margin-bottom: 0.667vw;
+  font-weight: 500;
+}
